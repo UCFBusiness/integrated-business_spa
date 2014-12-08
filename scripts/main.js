@@ -7,7 +7,7 @@ console.log( 'START: main.js' );
 
 // Configure RequireJS
 requirejs.config({
-    baseUrl: '/scripts',
+    baseUrl: 'scripts',
     paths: {
         /**-----------------------------------
          Frameworks/Libraries
@@ -41,7 +41,6 @@ requirejs.config({
          jQuery Plugins
         -----------------------------------**/
         
-        'classie': 'lib/classie',// v1.0.1
         'debounced': 'lib/jquery.debouncedresize', 
         'lazyloader': 'lib/jquery.bttrlazyloading.min',// v1.0.5
         
@@ -153,7 +152,7 @@ require(['modernizr'], function ()
                 //FullPage Settings
                 $('#fullpage').fullpage({
                     resize: false,
-                    anchors: ['pane1', 'pane2', 'pane3'],
+                    anchors: ['home', 'about', 'major'],
                     //navigation: true,
                     //navigationTooltips: ['First', 'Second', 'Third'],
                     slidesNavigation: true,

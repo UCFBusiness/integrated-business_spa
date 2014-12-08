@@ -1,4 +1,5 @@
 @charset "UTF-8";
+@import url(http://fonts.googleapis.com/css?family=Bevan|Open+Sans|Lato);
 /* normalize.css v3.0.0 | MIT License | git.io/normalize */
 /* line 9, scss/vendors/bootstrap/_normalize.scss */
 html, body {
@@ -10223,6 +10224,7 @@ body {
 .page {
   word-wrap: break-word;
   position: relative;
+  height: 100%;
   z-index: 3;
 }
 
@@ -10307,20 +10309,37 @@ a { //suppressing the -webkit-tap-highlight-color
 
 /* line 60, scss/partials/_primary.scss */
 .section-wrapper {
+  padding-top: 60px;
+  padding-bottom: 60px;
   display: table;
   width: 100%;
   height: 100%;
   /* For at least Firefox */
   min-height: 100%;
 }
+@media (min-width: 768px) {
+  /* line 60, scss/partials/_primary.scss */
+  .section-wrapper {
+    padding-top: 100px;
+    padding-bottom: 100px;
+  }
+  /* line 72, scss/partials/_primary.scss */
+  .section-wrapper h1 {
+    font-family: Lato, serif;
+    font-weight: 300;
+    font-size: 3.35em;
+    letter-spacing: 3px;
+    margin-bottom: 30px;
+  }
+}
 
-/* line 66, scss/partials/_primary.scss */
+/* line 86, scss/partials/_primary.scss */
 .site-wrapper-inner, .section-wrapper-inner {
   display: table-cell;
-  vertical-align: middle;
+  vertical-align: top;
 }
 @media (min-width: 768px) {
-  /* line 66, scss/partials/_primary.scss */
+  /* line 86, scss/partials/_primary.scss */
   .site-wrapper-inner, .section-wrapper-inner {
     vertical-align: middle;
     /* Start the vertical centering */
@@ -10328,7 +10347,7 @@ a { //suppressing the -webkit-tap-highlight-color
 }
 
 /* Padding for spacing */
-/* line 77, scss/partials/_primary.scss */
+/* line 100, scss/partials/_primary.scss */
 .inner {
   padding: 1em 30px;
 }
@@ -10336,21 +10355,43 @@ a { //suppressing the -webkit-tap-highlight-color
 /*
  * Page
  */
-/* line 87, scss/partials/_primary.scss */
-h1.head-title {
-  font-size: 4em;
+/* line 110, scss/partials/_primary.scss */
+.title-style, .title-xl, .title-lg, .title-sm {
+  font-family: Lato, serif;
+  font-weight: 300;
+}
+
+@media (min-width: 768px) {
+  /* line 115, scss/partials/_primary.scss */
+  .title-xl {
+    font-size: 3.4em;
+  }
+}
+
+@media (min-width: 768px) {
+  /* line 123, scss/partials/_primary.scss */
+  .title-lg {
+    font-size: 2.4em;
+  }
+}
+
+@media (min-width: 768px) {
+  /* line 131, scss/partials/_primary.scss */
+  .title-sm {
+    font-size: 1.4em;
+  }
 }
 
 /*
  * Custom button
  */
-/* line 95, scss/partials/_primary.scss */
+/* line 144, scss/partials/_primary.scss */
 .btn-lg, .btn-group-lg > .btn {
   padding: 10px 20px;
   font-weight: bold;
 }
 
-/* line 102, scss/partials/_primary.scss */
+/* line 151, scss/partials/_primary.scss */
 .btn-default,
 .btn-default:hover,
 .btn-default:focus {
@@ -10470,24 +10511,25 @@ Fullpage JS
 
 /* line 18, scss/modules/fullpage/_base.scss */
 .section {
+  height: 100%;
   position: relative;
   -webkit-box-sizing: border-box;
   -moz-box-sizing: border-box;
   box-sizing: border-box;
 }
 
-/* line 24, scss/modules/fullpage/_base.scss */
+/* line 25, scss/modules/fullpage/_base.scss */
 .slide {
   float: left;
 }
 
-/* line 27, scss/modules/fullpage/_base.scss */
+/* line 28, scss/modules/fullpage/_base.scss */
 .slide, .slidesContainer {
   height: 100%;
   display: block;
 }
 
-/* line 31, scss/modules/fullpage/_base.scss */
+/* line 32, scss/modules/fullpage/_base.scss */
 .slides {
   height: 100%;
   overflow: hidden;
@@ -10498,13 +10540,14 @@ Fullpage JS
   transition: all 0.3s ease-out;
 }
 
-/* line 40, scss/modules/fullpage/_base.scss */
+/* line 41, scss/modules/fullpage/_base.scss */
 .section.table, .slide.table {
   display: table;
   width: 100%;
+  height: 100%;
 }
 
-/* line 44, scss/modules/fullpage/_base.scss */
+/* line 46, scss/modules/fullpage/_base.scss */
 .tableCell {
   display: table-cell;
   vertical-align: middle;
@@ -10512,18 +10555,18 @@ Fullpage JS
   height: 100%;
 }
 
-/* line 50, scss/modules/fullpage/_base.scss */
+/* line 52, scss/modules/fullpage/_base.scss */
 .slidesContainer {
   float: left;
   position: relative;
 }
 
-/* line 55, scss/modules/fullpage/_base.scss */
+/* line 57, scss/modules/fullpage/_base.scss */
 .scrollable {
   overflow: scroll;
 }
 
-/* line 58, scss/modules/fullpage/_base.scss */
+/* line 60, scss/modules/fullpage/_base.scss */
 .easing {
   -webkit-transition: all 0.7s ease-out;
   -moz-transition: all 0.7s ease-out;
@@ -10531,7 +10574,7 @@ Fullpage JS
   transition: all 0.7s ease-out;
 }
 
-/* line 65, scss/modules/fullpage/_base.scss */
+/* line 67, scss/modules/fullpage/_base.scss */
 #fullPage-nav {
   position: fixed;
   z-index: 100;
@@ -10540,17 +10583,17 @@ Fullpage JS
   opacity: 1;
 }
 
-/* line 72, scss/modules/fullpage/_base.scss */
+/* line 74, scss/modules/fullpage/_base.scss */
 #fullPage-nav.right {
   right: 17px;
 }
 
-/* line 75, scss/modules/fullpage/_base.scss */
+/* line 77, scss/modules/fullpage/_base.scss */
 #fullPage-nav.left {
   left: 17px;
 }
 
-/* line 78, scss/modules/fullpage/_base.scss */
+/* line 80, scss/modules/fullpage/_base.scss */
 .fullPage-slidesNav {
   position: absolute;
   z-index: 4;
@@ -10558,24 +10601,24 @@ Fullpage JS
   opacity: 1;
 }
 
-/* line 84, scss/modules/fullpage/_base.scss */
+/* line 86, scss/modules/fullpage/_base.scss */
 .fullPage-slidesNav.bottom {
   bottom: 17px;
 }
 
-/* line 87, scss/modules/fullpage/_base.scss */
+/* line 89, scss/modules/fullpage/_base.scss */
 .fullPage-slidesNav.top {
   top: 17px;
 }
 
-/* line 91, scss/modules/fullpage/_base.scss */
+/* line 93, scss/modules/fullpage/_base.scss */
 #fullPage-nav ul,
 .fullPage-slidesNav ul {
   margin: 0;
   padding: 0;
 }
 
-/* line 96, scss/modules/fullpage/_base.scss */
+/* line 98, scss/modules/fullpage/_base.scss */
 #fullPage-nav li,
 .fullPage-slidesNav li {
   display: block;
@@ -10585,12 +10628,12 @@ Fullpage JS
   position: relative;
 }
 
-/* line 103, scss/modules/fullpage/_base.scss */
+/* line 105, scss/modules/fullpage/_base.scss */
 .fullPage-slidesNav li {
   display: inline-block;
 }
 
-/* line 107, scss/modules/fullpage/_base.scss */
+/* line 109, scss/modules/fullpage/_base.scss */
 #fullPage-nav li a,
 .fullPage-slidesNav li a {
   display: block;
@@ -10602,14 +10645,14 @@ Fullpage JS
   text-decoration: none;
 }
 
-/* line 117, scss/modules/fullpage/_base.scss */
+/* line 119, scss/modules/fullpage/_base.scss */
 #fullPage-nav li .active span,
 .fullPage-slidesNav .active span {
   background: #cc9900;
   border: 1px solid #333;
 }
 
-/* line 122, scss/modules/fullpage/_base.scss */
+/* line 124, scss/modules/fullpage/_base.scss */
 #fullPage-nav span,
 .fullPage-slidesNav span {
   top: 2px;
@@ -10625,7 +10668,7 @@ Fullpage JS
   z-index: 1;
 }
 
-/* line 135, scss/modules/fullpage/_base.scss */
+/* line 137, scss/modules/fullpage/_base.scss */
 .fullPage-tooltip {
   position: absolute;
   color: #fff;
@@ -10634,12 +10677,12 @@ Fullpage JS
   top: -2px;
 }
 
-/* line 142, scss/modules/fullpage/_base.scss */
+/* line 144, scss/modules/fullpage/_base.scss */
 .fullPage-tooltip.right {
   right: 20px;
 }
 
-/* line 145, scss/modules/fullpage/_base.scss */
+/* line 147, scss/modules/fullpage/_base.scss */
 .fullPage-tooltip.left {
   left: 20px;
 }
@@ -10651,22 +10694,23 @@ background: rgba(255,255,255,.3); //- white
 .section {
   margin: 0;
   padding: 0;
-}
-/* line 12, scss/modules/fullpage/_section.scss */
-.section:nth-child(2n+1) {
-  background: rgba(255, 255, 255, 0.2);
-  color: #555;
-  /* IE8 proofing */
-  color: rgba(51, 51, 51, 0.5);
-}
-/* line 18, scss/modules/fullpage/_section.scss */
-.section:nth-child(2n) {
+  border: 0;
   background: rgba(0, 0, 0, 0.7);
   color: #fff;
   /* IE8 proofing */
   color: rgba(255, 255, 255, 0.75);
 }
-/* line 31, scss/modules/fullpage/_section.scss */
+/* line 29, scss/modules/fullpage/_section.scss */
+.section:nth-child(1) {
+  background: rgba(255, 255, 255, 0.2);
+  color: #555;
+  /* IE8 proofing */
+  color: rgba(51, 51, 51, 0.5);
+  background-image: url(../images/bg-lg1.jpg);
+  background-repeat: no-repeat;
+  background-size: cover;
+}
+/* line 39, scss/modules/fullpage/_section.scss */
 .section .sectionsNav {
   padding: .1em;
   position: absolute;
@@ -10675,50 +10719,50 @@ background: rgba(255,255,255,.3); //- white
   z-index: 100;
 }
 @media (max-width: 999px) {
-  /* line 31, scss/modules/fullpage/_section.scss */
+  /* line 39, scss/modules/fullpage/_section.scss */
   .section .sectionsNav {
     bottom: 3%;
     left: 47%;
   }
 }
 @media (max-width: 699px) and (orientation: landscape) {
-  /* line 31, scss/modules/fullpage/_section.scss */
+  /* line 39, scss/modules/fullpage/_section.scss */
   .section .sectionsNav {
     bottom: 3%;
     left: 46%;
   }
 }
 @media (max-width: 499px) and (orientation: portrait) {
-  /* line 31, scss/modules/fullpage/_section.scss */
+  /* line 39, scss/modules/fullpage/_section.scss */
   .section .sectionsNav {
     bottom: 3%;
     left: 43%;
   }
 }
-/* line 60, scss/modules/fullpage/_section.scss */
+/* line 68, scss/modules/fullpage/_section.scss */
 .section .sectionsNav.go {
   text-align: center;
   text-decoration: none;
 }
-/* line 65, scss/modules/fullpage/_section.scss */
+/* line 73, scss/modules/fullpage/_section.scss */
 .section .sectionsNav.go:before, .section .sectionsNav#goNext:before, .section .sectionsNav#goTop:before {
   display: block;
   font-size: 0.7em;
 }
-/* line 72, scss/modules/fullpage/_section.scss */
+/* line 80, scss/modules/fullpage/_section.scss */
 .section .sectionsNav#goNext:before {
-  content: "Scroll for More";
+  content: "Learn More";
 }
-/* line 79, scss/modules/fullpage/_section.scss */
+/* line 87, scss/modules/fullpage/_section.scss */
 .section .sectionsNav#goTop:before {
   content: "Back to Top";
 }
-/* line 85, scss/modules/fullpage/_section.scss */
+/* line 93, scss/modules/fullpage/_section.scss */
 .section .sectionsNav .fa-chevron-down {
   font-size: 2.8em;
 }
 
-/* line 91, scss/modules/fullpage/_section.scss */
+/* line 99, scss/modules/fullpage/_section.scss */
 .fullPage-header {
   position: absolute;
   top: 0;
@@ -13956,4 +14000,48 @@ MIT License, https://github.com/shprink/BttrLazyLoading/blob/master/LICENSE
 .rollOut {
   -webkit-animation-name: rollOut;
   animation-name: rollOut;
+}
+
+@media (min-width: 768px) {
+  /* line 1, scss/partials/_slides.scss */
+  #demo1 {
+    background-image: url(../images/student-exp.jpg);
+    background-attachment: fixed;
+    background-repeat: no-repeat;
+    background-size: cover;
+    background-position: top left;
+  }
+}
+
+@media (min-width: 768px) {
+  /* line 11, scss/partials/_slides.scss */
+  #demo2 {
+    background-image: url(../images/entrepreneurial-culture.jpg);
+    background-attachment: fixed;
+    background-repeat: no-repeat;
+    background-size: cover;
+    background-position: top center;
+  }
+}
+
+@media (min-width: 768px) {
+  /* line 21, scss/partials/_slides.scss */
+  #demo3 {
+    background-image: url(../images/students-in-class.jpg);
+    background-attachment: fixed;
+    background-repeat: no-repeat;
+    background-size: cover;
+    background-position: top right;
+  }
+}
+
+@media (min-width: 768px) {
+  /* line 31, scss/partials/_slides.scss */
+  #demo4 {
+    background-image: url(../images/unique-place.jpg);
+    background-attachment: fixed;
+    background-repeat: no-repeat;
+    background-size: cover;
+    background-position: top right;
+  }
 }
