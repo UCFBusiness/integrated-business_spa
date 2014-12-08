@@ -10320,8 +10320,7 @@ a { //suppressing the -webkit-tap-highlight-color
 @media (min-width: 768px) {
   /* line 60, scss/partials/_primary.scss */
   .section-wrapper {
-    padding-top: 100px;
-    padding-bottom: 100px;
+    padding-top: 80px;
   }
   /* line 72, scss/partials/_primary.scss */
   .section-wrapper h1 {
@@ -10707,10 +10706,11 @@ background: rgba(255,255,255,.3); //- white
   /* IE8 proofing */
   color: rgba(51, 51, 51, 0.5);
   background-image: url(../images/bg-lg1.jpg);
+  background-position: center;
   background-repeat: no-repeat;
   background-size: cover;
 }
-/* line 39, scss/modules/fullpage/_section.scss */
+/* line 40, scss/modules/fullpage/_section.scss */
 .section .sectionsNav {
   padding: .1em;
   position: absolute;
@@ -10719,50 +10719,50 @@ background: rgba(255,255,255,.3); //- white
   z-index: 100;
 }
 @media (max-width: 999px) {
-  /* line 39, scss/modules/fullpage/_section.scss */
+  /* line 40, scss/modules/fullpage/_section.scss */
   .section .sectionsNav {
     bottom: 3%;
     left: 47%;
   }
 }
 @media (max-width: 699px) and (orientation: landscape) {
-  /* line 39, scss/modules/fullpage/_section.scss */
+  /* line 40, scss/modules/fullpage/_section.scss */
   .section .sectionsNav {
     bottom: 3%;
     left: 46%;
   }
 }
 @media (max-width: 499px) and (orientation: portrait) {
-  /* line 39, scss/modules/fullpage/_section.scss */
+  /* line 40, scss/modules/fullpage/_section.scss */
   .section .sectionsNav {
     bottom: 3%;
     left: 43%;
   }
 }
-/* line 68, scss/modules/fullpage/_section.scss */
+/* line 69, scss/modules/fullpage/_section.scss */
 .section .sectionsNav.go {
   text-align: center;
   text-decoration: none;
 }
-/* line 73, scss/modules/fullpage/_section.scss */
+/* line 74, scss/modules/fullpage/_section.scss */
 .section .sectionsNav.go:before, .section .sectionsNav#goNext:before, .section .sectionsNav#goTop:before {
   display: block;
   font-size: 0.7em;
 }
-/* line 80, scss/modules/fullpage/_section.scss */
+/* line 81, scss/modules/fullpage/_section.scss */
 .section .sectionsNav#goNext:before {
   content: "Learn More";
 }
-/* line 87, scss/modules/fullpage/_section.scss */
+/* line 88, scss/modules/fullpage/_section.scss */
 .section .sectionsNav#goTop:before {
   content: "Back to Top";
 }
-/* line 93, scss/modules/fullpage/_section.scss */
+/* line 94, scss/modules/fullpage/_section.scss */
 .section .sectionsNav .fa-chevron-down {
   font-size: 2.8em;
 }
 
-/* line 99, scss/modules/fullpage/_section.scss */
+/* line 100, scss/modules/fullpage/_section.scss */
 .fullPage-header {
   position: absolute;
   top: 0;

@@ -152,7 +152,7 @@ require(['modernizr'], function ()
                 //FullPage Settings
                 $('#fullpage').fullpage({
                     resize: false,
-                    anchors: ['home', 'about', 'major'],
+                    //anchors: ['home', 'about', 'major'],
                     //navigation: true,
                     //navigationTooltips: ['First', 'Second', 'Third'],
                     slidesNavigation: true,
