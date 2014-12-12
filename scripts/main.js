@@ -33,6 +33,7 @@ requirejs.config({
             // If CDN fails, load from this location
             'lib/jquery-ui.min'// v1.10.3
         ],
+        waitSeconds: 40, //allowed time for external libraries to load
         
         'modernizr': 'lib/modernizr-2.6.2.min', // v2.6.2
         'domReady': 'lib/domReady',// v2.0.1
